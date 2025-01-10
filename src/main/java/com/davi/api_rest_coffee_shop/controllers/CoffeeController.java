@@ -45,4 +45,11 @@ public class CoffeeController {
         return coffeeRepository.save(updatedCoffee);
     }
 
+    @DeleteMapping(value = "/deleteCoffee/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Coffee deleteCoffee(@PathVariable Long id) {
+        Coffee getCoffee = coffeeRepository.findById(id).orElseThrow();
+        coffeeRepository.delete(getCoffee);
+        return getCoffee;
+    }
+
 }
