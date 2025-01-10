@@ -9,6 +9,9 @@ Technologies Used
 
 What the API Does
 
+![API Testing on Insomnia](https://github.com/user-attachments/assets/3ae51bb6-828e-4380-be64-946d46290690)
+
+
 This is a simple RESTful API that manages coffee items for a coffee shop. It supports basic CRUD operations:
 
     Create: Add a new coffee item.
