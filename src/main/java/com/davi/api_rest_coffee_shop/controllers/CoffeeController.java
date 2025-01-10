@@ -22,7 +22,7 @@ public class CoffeeController {
     }
 
     @PostMapping(value = "/createCoffee", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Coffee updateCoffee(@RequestBody Coffee coffee) {
+    public Coffee createNewCoffee(@RequestBody Coffee coffee) {
         Coffee createCoffee = new Coffee();
 
         createCoffee.setName(coffee.getName());
