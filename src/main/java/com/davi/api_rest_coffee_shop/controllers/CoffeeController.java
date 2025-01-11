@@ -52,4 +52,9 @@ public class CoffeeController {
         return getCoffee;
     }
 
+    @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Coffee getCoffeeById(@PathVariable Long id) {
+        return coffeeRepository.findById(id).orElse(null);
+    }
+
 }
